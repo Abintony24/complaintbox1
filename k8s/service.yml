@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: complaintbox-service
+  namespace: complaintbox
+spec:
+  type: LoadBalancer
+  selector:
+    app: complaintbox
+  ports:
+    - port: 80
+      targetPort: 8000
