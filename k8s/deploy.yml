@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: complaintbox
-          image: abintony/complaintbox:latest
+          image: abintony/complaintbox:1
           ports:
             - containerPort: 8000
